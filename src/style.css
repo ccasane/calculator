@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #71cc77;
+}
+
+.calculator-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: .9rem;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 1.8rem;
+}
+
+.black-screen {
+	width: 50px;
+	height: 8px;
+	padding: 1rem;
+	margin-left: 1rem;
+	border-radius: 8px;
+	background-color: #000;
+}
+
+.screen {
+	height: 95px;
+	grid-column: 1/5;
+	padding-right: 1.2rem;
+	padding-top: .2rem;
+	text-align: right;
+	border-radius: 15px;
+	background-color: #fff;
+	font-weight: 500;
+	border: 4px solid #000;
+}
+
+.operand-0 {
+	font-size: 1.6rem;
+}
+
+.operand-1 {
+	font-size: 2.1rem;
+}
+
+.calculator {
+	padding: 1.2rem;
+	border: 8px solid #000;
+	border-radius: 30px;
+	background-color: #246ac9;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.container-cal {
+	width: 100%;
+	height: 390px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: .3rem;
+	margin-bottom: 1.6rem;
+}
+
+.number,
+.delete,
+.delete-all,
+.operator {
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	background-color: #d3d3d3;
+	box-shadow: 1px 2px 1px #000;
+}
+
+.equal {
+	grid-column: span 2; 
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	background-color: #fff !important;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	box-shadow: 1px 2px 1px #000;
+}
+
+.operator {
+	background-color: #979797;
+}
+
+.delete-all,
+.delete {
+	background-color: #d9ad58;
+}
+
+footer {
+	margin-top: 1rem;
+}
+
+.user {
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.number:hover,
+.delete:hover,
+.delete-all:hover,
+.operator:hover,
+.equal:hover {
+	transform: scale(0.90);
+}

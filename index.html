@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./src/img/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="calculator">
+            <div class="calculator-title">
+                <div class="title">CALCULATOR</div>
+                <div class="black-screen"></div>
+            </div>
+            <div class="container-cal">
+                <div class="screen">
+                    <div class="operand-0"></div>
+                    <div class="operand-1">0</div>
+                </div>
+                <button class="delete-all">AC</button>
+                <button class="delete">DEL</button>
+                <button class="operator" value="percentage">%</button>
+                <button class="operator" value="multiplication">*</button>
+
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator" value="division">÷</button>
+
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator" value="subtraction">-</button>
+
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator" value="addition">+</button>
+
+                <button class="number">.</button>
+                <button class="number">0</button>
+                <button class="operator equal" value="equal">=</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © <span class="date"></span> <a href="https://github.com/joelccasane" target="_blank" class="user" rel="noopener noreferrer">Joel Ccasane</a></p>
+    </footer>
+    <script src="./src/models/Calculator.js"></script>
+    <script src="./src/models/Display.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
